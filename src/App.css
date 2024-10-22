@@ -1,0 +1,741 @@
+/* lato font family  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* ################################### website start ################################### */
+/* * {
+   border: 1px solid green;
+} */
+
+:root {
+   --transitionState1: all .2s 0s linear;
+   --transitionState2: all .5s 0s linear;
+   --lato: "Lato", sans-serif;
+   --buttonColor: #EA202E;
+   --backColor: #2C2D2E;
+}
+
+
+/* -------------------------------------- navbar start -------------------------------------- */
+#logo {
+   width: 50%;
+}
+
+#navbarSupportedContent ul li a {
+   font-family: var(--lato);
+   text-transform: uppercase;
+   font-weight: 600;
+   color: #fff;
+   transition: var(--transitionState1);
+}
+
+nav {
+   background: rgba(0, 0, 0, 0.858);
+   /* background: transparent; */
+}
+
+#navbarSupportedContent .active {
+   color: var(--buttonColor);
+}
+
+#navbarSupportedContent ul li a:hover {
+   color: var(--buttonColor);
+}
+#navigation .navbar-toggler {
+   background-color: rgba(208, 208, 208, 0.65);
+   border-radius: 50%;
+   padding: 5px;
+}
+#navigation .navbar-toggler .navbar-toggler-icon {
+   color: black;
+}
+#navigation .navbar-toggler:hover {
+   box-shadow: 0px 0px 2px white;
+}
+
+@media screen and (min-width: 992px) {
+   nav {
+      background: rgba(0, 0, 0, 0.764);
+      /* background: transparent; */
+   }
+   
+}
+/* -------------------------------------- navbar end -------------------------------------- */
+
+
+
+/* -------------------------------------- footer start -------------------------------------- */
+#footer {
+   background-image: url(./images/footer-parallax-1920x1000.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 70px 50px;
+   z-index: -1;
+}
+
+#twitter {
+   /* border: 2px solid white; */
+   padding: 30px 20px 20px;
+   background-color: var(--buttonColor);
+   column-gap: 10px;
+   color: #fff;
+   margin-left: 10px;
+   transition: var(--transitionState1);
+}
+
+#facebook {
+   /* border: 2px solid white; */
+   padding: 30px 25px 20px;
+   background-color: var(--buttonColor);
+   column-gap: 10px;
+   color: #fff;
+   margin-right: 10px;
+   transition: var(--transitionState1);
+}
+
+:is(#facebook, #twitter) i {
+   font-size: 2rem;
+}
+
+#footer p {
+   margin-top: 15%;
+   text-transform: uppercase;
+   font-size: 0.8rem;
+   color: #fff;
+   font-weight: 500;
+   font-family: var(--lato);
+}
+
+#footer #made {
+   color: #fff;
+   text-decoration: none;
+   transition: var(--transitionState1);
+}
+
+/* #footer .row {
+   border: 2px solid white;
+} */
+#footer #made:hover {
+   color: var(--buttonColor);
+}
+
+:is(#facebook, #twitter):hover {
+   background-color: rgb(83, 83, 83);
+}
+
+@media screen and (min-width:768px) {
+   #footer {
+      background-image: url(./images/footer-parallax-1920x1000.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 100px 50px;
+   }
+}
+
+@media screen and (min-width:1200px) {
+   #footer {
+      background-image: url(./images/footer-parallax-1920x1000.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 200px 50px;
+   }
+
+   #footer p {
+      margin-top: 10%;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: #fff;
+   }
+}
+
+/* -------------------------------------- footer end -------------------------------------- */
+
+
+
+
+/* -------------------------------------- home page start -------------------------------------- */
+#home {
+   margin-top: 110px;
+}
+#carouselExampleInterval .carousel-caption {
+   /* position: relative; */
+   top: 0px;
+}
+#carouselExampleInterval .carousel-caption h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+}
+#carouselExampleInterval .carousel-caption h5 span {
+   font-weight: 100;
+   color: rgba(255, 255, 255, 0.87);
+}
+#carouselExampleInterval .carousel-caption p {
+   display: none;
+}
+#carouselExampleInterval button {
+   display: none;
+}
+#carouselExampleInterval .carousel-control-prev {
+   left: 30px;
+   line-height: 65px;
+   background-color: var(--backColor);
+   border: none;
+}
+#carouselExampleInterval .carousel-control-next {
+   right: 30px;
+   line-height: 65px;
+   background-color: rgb(52, 52, 52);
+   border: none;
+}
+
+/* .carousel-control-prev , .carousel-control-next:hover {
+   background-color: var(--buttonColor);
+} */
+
+@media screen and (min-width: 768px) {
+   #home {
+      margin-top: 75px;
+   }
+   #carouselExampleInterval button {
+      display: block;
+      width: 50px;
+      height: 50px;
+      top: 40%;
+      border: 2px solid white;
+      background-color: rgb(41, 41, 41);
+   }
+   #carouselExampleInterval .carousel-caption {
+      /* position: relative; */
+      top: 10px;
+   }
+   #carouselExampleInterval .carousel-caption p {
+      display: block;
+      font-weight: 100;
+   }
+   #carouselExampleInterval .carousel-caption h5 {
+      font-size: 5rem;
+      text-transform: uppercase;
+      font-weight: 800;
+   }
+}
+@media screen and (min-width: 992px) {
+   #home {
+      margin-top: 0px;
+   }
+   #carouselExampleInterval button {
+      display: block;
+      width: 50px;
+      height: 50px;
+      top: 40%;
+      border: 2px solid white;
+      background-color: rgb(41, 41, 41);
+   }
+   #carouselExampleInterval .carousel-caption {
+      /* position: relative; */
+      top: 100px;
+   }
+}
+
+
+
+/* -------------------------------------- about end -------------------------------------- */
+#about {
+   background-color: var(--backColor);
+   padding: 20px 10px;
+}
+#about h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: rgba(255, 255, 255, 0.87);
+   font-family: var(--lato);
+}
+#about h5 span {
+   font-weight: 100;
+}
+#about p {
+   color: white;
+   font-family: var(--lato);
+   font-weight: 300;
+}
+#about a {
+   padding: 15px 25px; 
+   background-color: var(--buttonColor);
+   color: #fff;
+   transition: var(--transitionState1);
+   text-decoration: none;
+   font-family: var(--lato);
+   text-transform: uppercase;
+}
+#about a:hover {
+   background-color: var(--backColor);
+   border: 1px solid white;
+}
+@media screen and (min-width: 768px) {
+   #about {
+      background-color: var(--backColor);
+      padding: 50px 30px;
+   }
+   #about a {
+      padding: 20px 30px;
+      background-color: var(--buttonColor);
+      color: #fff;
+      transition: var(--transitionState1);
+      text-decoration: none;
+   }
+   #about h5 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.87);
+      font-family: var(--lato);
+   }
+}
+
+/* -------------------------------------- about end -------------------------------------- */
+
+
+
+/* -------------------------------------- service start -------------------------------------- */
+#service {
+   background-color: var(--buttonColor);
+}
+#service-info1 {
+   padding: 30px 15px;
+}
+#service h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: rgba(255, 255, 255, 0.87);
+   font-family: var(--lato);
+}
+#service h5 span {
+   font-weight: 250;
+}
+#service p {
+   color: white;
+   font-family: var(--lato);
+   font-weight: 300;
+}
+#service a {
+   padding: 15px 25px; 
+   background-color: white;
+   color: var(--backColor);
+   transition: var(--transitionState1);
+   text-decoration: none;
+   font-family: var(--lato);
+   text-transform: uppercase;
+}
+#service a:hover {
+   padding: 15px 25px; 
+   background-color: var(--backColor);
+   color: white;
+   transition: var(--transitionState1);
+   text-decoration: none;
+   font-family: var(--lato);
+   text-transform: uppercase;
+}
+
+#service-info2 {
+   padding: 30px 15px;
+}
+
+@media screen and (min-width: 768px) {
+   #service-info1 {
+      padding: 50px 30px;
+   }
+   #service-info2 {
+      padding: 50px 30px;
+   }
+   #service h5 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.87);
+      font-family: var(--lato);
+   }
+}
+/* -------------------------------------- service end -------------------------------------- */
+
+
+
+/* -------------------------------------- client start -------------------------------------- */
+#client {
+   padding: 40px 15px;
+}
+#client img {
+   border-radius: 50%;
+}
+#client h4 {
+   text-transform: uppercase;
+   font-family: var(--lato);
+   font-weight: 750;
+}
+#client h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: black;
+   font-family: var(--lato);
+}
+#client h5 span {
+   font-weight: 250;
+}
+#client p {
+   font-family: var(--lato);
+   font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+   #client img {
+      width: 40%;
+      height: 40%;
+   }
+   #client h5 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: black;
+      font-family: var(--lato);
+   }
+}
+/* -------------------------------------- client end -------------------------------------- */
+/* -------------------------------------- home page end -------------------------------------- */
+
+
+
+/* -------------------------------------- service page start -------------------------------------- */
+/* ------------------------ cap start ------------------------  */
+#cap {
+   margin-top: 110px;
+   background-color: var(--backColor);
+   padding: 100px 10px;
+   
+}
+#cap h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: white;
+   font-family: var(--lato);
+}
+#cap h5 span {
+   font-weight: 250;
+   color: white;
+}
+#cap h4 {
+   text-transform: uppercase;
+   color: white;
+   font-family: var(--lato);
+}
+#cap p {
+   color: white;
+   font-family: var(--lato);
+   margin-bottom: 50px;
+}
+#cap-info a {
+   padding: 15px 25px; 
+   color: white;
+   background-color: var(--buttonColor);
+   transition: var(--transitionState1);
+   text-decoration: none;
+   font-family: var(--lato);
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-top: 100px;
+}
+#cap-info a:hover {
+   background-color: black;
+}
+@media screen and (min-width: 768px) {
+   #cap {
+      margin-top: 75px;
+      background-color: var(--backColor);
+      padding: 100px 70px;
+      
+   }
+   #cap-info a {
+      padding: 22px 40px; 
+      color: white;
+      background-color: var(--buttonColor);
+      transition: var(--transitionState1);
+      text-decoration: none;
+      font-family: var(--lato);
+      text-transform: uppercase;
+      font-weight: 700;
+   }
+}
+/* ------------------------ cap start ------------------------  */
+
+
+
+/* ------------------------ cap-info start ------------------------  */
+#offer-info {
+   padding: 50px 10px;
+   background-color: var(--buttonColor);
+   color: white;
+}
+#offer-info h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: white;
+   font-family: var(--lato);
+}
+#offer-info h5 span {
+   font-weight: 250;
+   color: white;
+}
+#number {
+   width: 60px;
+   height: 60px;
+   border: 1.4px solid white;
+   border-radius: 50%;
+   line-height: 55px;
+   font-size: 2rem;
+   font-family: var(--lato);
+   color: white;
+}
+#offer-info a {
+   text-decoration: none;
+   color: white;
+   text-transform: uppercase;
+   transition: var(--transitionState1);
+}
+#offer-info a:hover {
+   color: black;
+}
+
+/* ------------------------ cap-info start ------------------------  */
+
+
+
+/* ------------------------ advice start ------------------------ */
+#advice {
+   background-color: var(--backColor);
+   padding: 100px 20px;
+}
+#advice h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: white;
+   font-family: var(--lato);
+}
+#advice h5 span {
+   font-weight: 250;
+   color: white;
+}
+#advice h4 {
+   color: white;
+   text-transform: uppercase;
+}
+#advice p {
+   color: white;
+}
+@media screen and (min-width: 768px) {
+   #advice {
+      background-color: var(--backColor);
+      padding: 100px 60px;
+   }
+}
+
+/* ------------------------ advice end ------------------------ */
+
+/* -------------------------------------- service page end -------------------------------------- */
+
+
+
+/* -------------------------------------- price page start -------------------------------------- */
+
+#price {
+   margin-top: 110px;
+   background-color: #4C4E50;
+   padding: 100px 20px;
+}
+#price h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: white;
+   font-family: var(--lato);
+}
+#price h5 span {
+   font-weight: 250;
+   color: white;
+}
+#showPrices .nav-item {
+   border: 2px solid white;
+   padding: 8px 20px;
+   transition: var(--transitionState1);
+}
+#showPrices .nav-item:hover {
+   border: 2px solid var(--buttonColor);
+   background-color: var(--buttonColor);
+}
+#showPrices a[data-bs-toggle="tab"] {
+   background-color: transparent;
+   color: white;
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 1.2rem;
+   font-family: var(--lato);
+}
+#priceTable table {
+   font-family: var(--lato);
+}
+#priceTable table tr td a {
+   text-decoration: none;
+   color: rgba(255, 255, 255, 0.735);
+   transition: var(--transitionState1);
+}
+#priceTable table tr td a:hover {
+   color: var(--buttonColor);
+}
+
+#priceTable table tr td:nth-child(1) {
+   width: 100%;
+}
+#priceTable table tr td:nth-child(2) {
+   text-transform: uppercase;
+   font-weight: 600;
+}
+#priceOffer {
+   background-image: url(images/cta-02-1920x350.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:45% 100%;
+   background-attachment: fixed;
+   padding: 100px 20px;;
+}
+#priceOffer h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: white;
+   font-family: var(--lato);
+}
+#priceOffer h5 span {
+   font-weight: 250;
+   color: white;
+}
+#priceOffer p {
+   color: white;
+   font-family: var(--lato);
+}
+@media screen and (min-width: 768px) {
+   #price {
+      margin-top: 75px;
+      background-color: #4C4E50;
+   }
+   #priceTable table tr td:nth-child(1) {
+      width: 30%;
+   }
+   #price {
+      margin-top: 75px;
+      background-color: #4C4E50;
+      padding: 100px 60px;
+   }
+   #priceOffer {
+      background-image: url(images/cta-02-1920x350.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 100px 60px;;
+   }
+}
+
+
+/* -------------------------------------- price page start -------------------------------------- */
+
+
+
+/* -------------------------------------- news page start -------------------------------------- */
+#latest-news {
+   margin-top: 110px;
+   background-color: var(--buttonColor);
+   padding: 100px 20px;
+}
+#latest-news h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: white;
+   font-family: var(--lato);
+}
+#latest-news h5 span {
+   font-weight: 250;
+   color: white;
+}
+#latest-news h4 {
+   color: white;
+   text-transform: uppercase;
+   font-family: var(--lato);
+}
+#latest-news p {
+   color: white;
+   font-family: var(--lato);
+}
+#date {
+   /* border: 2px solid white; */
+   background-color: white;
+   color: var(--buttonColor);
+   font-size: 2.3rem;
+   padding: 10px 5px;
+   font-weight: 300;
+   font-family: var(--lato);
+}
+
+@media screen and (min-width: 768px) {
+   #latest-news {
+      margin-top: 75px;
+      background-color: var(--buttonColor);
+      padding: 100px 60px;
+   }
+   #date {
+      /* border: 2px solid white; */
+      background-color: white;
+      color: var(--buttonColor);
+      font-size: 2.3rem;
+      padding: 10px 10px;
+      font-weight: 300;
+      font-family: var(--lato);
+   }
+   
+}
+
+
+
+#cycle {
+   padding: 100px 20px;
+}
+#cycle h5 {
+   font-size: 2rem;
+   text-transform: uppercase;
+   font-weight: 800;
+   color: var(--backColor);
+   font-family: var(--lato);
+}
+#cycle h4 {
+   font-family: var(--lato);
+   text-transform: uppercase;
+}
+#cycle p {
+   font-family: var(--lato);
+}
+#cycle h5 span {
+   font-weight: 290;
+   color: var(--backColor);
+}
+#cycle iframe {
+   width: 100%;
+}
+@media screen and (min-width: 768px) {
+   #cycle {
+      padding: 100px 60px;
+   }
+}
+/* -------------------------------------- news page end -------------------------------------- */
+
+
+/* ################################### website end ################################### */
